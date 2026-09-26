@@ -4,39 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback System</title>
 
-    <title>Review Management System</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Review Management System</h1>
+        <h1>Feedback System</h1>
+        <p>Collect and manage ratings and comments</p>
     </header>
-
     <main>
+        <section>
+            <h2>Give Your Feedback</h2>
 
-        <form>
+            <form>
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            <br><br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                 <br><br>
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+                    <option value="">Select Rating</option>
+                    <option value="1">1 Star</option>
+                    <option value="2">2 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="5">5 Stars</option>
+                </select><br><br>
+            
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="">Select Category</option>
+                    <option value="Product">Product</option>
+                    <option value="Service">Service</option>
+                    <option value="Support">Support</option>
+                    <option value="Other">Other</option>
+                </select><br><br>
 
-            <label for="rating">Rating:</label>
-            <input
-                type="number" id="rating" name="rating" min="1"max="5" placeholder="Enter rating" required >
-            <br><br>
+                <label for="comment">Comment:</label>
+                <textarea 
+                    id="comment" 
+                    name="comment" 
+                    rows="4"
+                    placeholder="Enter your comment"
+                ></textarea><br><br>
 
-            <label for="search">Search:</label>
-            <input
-                type="search" id="search" name="search" placeholder="Search reviews"
-                required>
+                <button type="submit">Submit Feedback</button><br><br>
 
-        </form>
+            </form>
+        </section>
 
     </main>
 
 </body>
 
 </html>
-
