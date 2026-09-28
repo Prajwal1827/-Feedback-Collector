@@ -74,6 +74,9 @@ button {
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+
+    background-color: #007bff;
+    color: white;
 }
 
 button:hover {
@@ -94,10 +97,75 @@ button:hover {
         padding: 18px;
     }
 
-    input,
-    select,
-    textarea,
-    button {
+    input,select,textarea,button {
         font-size: 14px;
+    }
+}
+
+#search,
+#filter {
+    margin-bottom: 15px;
+}
+
+#averageRating {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#feedbackList {
+    margin-top: 20px;
+}
+
+#emptyMessage {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+.feedback-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.feedback-item h3 {
+    margin-bottom: 8px;
+}
+
+.feedback-item p {
+    margin-bottom: 6px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.8;
+}
+
+
+@media (max-width: 600px) {
+
+    #averageRating {
+        font-size: 20px;
+    }
+
+    .feedback-item {
+        padding: 12px;
+    }
+
+    .edit-btn,
+    .delete-btn {
+        width: 100%;
+        margin-bottom: 8px;
     }
 }
