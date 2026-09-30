@@ -4,80 +4,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Feedback System</title>
+
     <link rel="stylesheet" href="style.css">
 
+    <script src="javascript.js" defer></script>
 </head>
 
 <body>
+
     <header>
         <h1>Feedback System</h1>
         <p>Collect and manage ratings and comments</p>
     </header>
+
+
     <main>
+
         <section>
+
             <h2>Give Your Feedback</h2>
 
             <form>
 
+                <!-- Name -->
                 <label for="name">Name:</label>
+
                 <input type="text" id="name" name="name" placeholder="Enter your name">
-                 <br><br>
+      
                 <label for="rating">Rating:</label>
+
                 <select id="rating" name="rating">
+
                     <option value="">Select Rating</option>
+
                     <option value="1">1 Star</option>
+
                     <option value="2">2 Stars</option>
+
                     <option value="3">3 Stars</option>
+
                     <option value="4">4 Stars</option>
+
                     <option value="5">5 Stars</option>
-                </select><br><br>
-            
+
+                </select>
+
                 <label for="category">Category:</label>
+
                 <select id="category" name="category">
+
                     <option value="">Select Category</option>
+
                     <option value="Product">Product</option>
+
                     <option value="Service">Service</option>
+
                     <option value="Support">Support</option>
+
                     <option value="Other">Other</option>
-                </select><br><br>
+
+                </select>
+
 
                 <label for="comment">Comment:</label>
-                <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment">
-                </textarea><br><br>
 
-                <button type="submit">Submit Feedback</button><br><br>
-                
-<section>
-    <h2>Manage Feedback</h2>
+                <textarea id="comment" name="comment" rows="4" placeholder="Enter your comment"
+                ></textarea>
 
-    <label for="search">Search Feedback:</label>
-    <input type="text" id="search" name="search" placeholder="Search by name or comment">
-
-    <label for="filter">Filter by Category:</label>
-    <select id="filter" name="filter">
-        <option value="">All Categories</option>
-        <option value="Product">Product</option>
-        <option value="Service">Service</option>
-        <option value="Support">Support</option>
-        <option value="Other">Other</option>
-    >
-
-    <div>
-        <h3>Average Rating</h3>
-        <p id="averageRating">0.0 / 5</p>
-    </div>
-</section>
-
-<section>
-    <h2>Feedback List</h2>
-
-    <div id="feedbackList">
-        <p id="emptyMessage">No feedback available.</p>
-    </div>
-</section>
+                <button type="submit">
+                    Submit Feedback
+                </button>
 
             </form>
+
+        </section>
+
+        <section>
+
+            <h2>Manage Feedback</h2>
+
+            <label for="search">Search Feedback:</label>
+
+            <input type="text" id="search" name="search" placeholder="Search by name or comment">
+
+            <label for="filter">Filter by Category:</label>
+
+            <select id="filter" name="filter">
+
+                <option value="">All Categories</option>
+
+                <option value="Product">Product</option>
+
+                <option value="Service">Service</option>
+
+                <option value="Support">Support</option>
+
+                <option value="Other">Other</option>
+
+            </select>
+
+            <div class="average-box">
+
+                <h3>Average Rating</h3>
+
+                <p id="averageRating">
+                    0.0 / 5
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Feedback List Section -->
+        <section class="feedback-section">
+
+            <h2>Feedback List</h2>
+
+            <div id="feedbackList">
+
+                <p id="emptyMessage">
+                    No feedback available.
+                </p>
+
+            </div>
+
         </section>
 
     </main>

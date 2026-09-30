@@ -102,8 +102,7 @@ button:hover {
     }
 }
 
-#search,
-#filter {
+#search,#filter {
     margin-bottom: 15px;
 }
 
@@ -168,4 +167,20 @@ button:hover {
         width: 100%;
         margin-bottom: 8px;
     }
+}
+
+.feedback-section {
+    margin-top: 25px;
+}
+
+.average-box {
+    background-color: #f4f6f8;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.average-box h3 {
+    margin-bottom: 8px;
 }
